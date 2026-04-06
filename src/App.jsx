@@ -1,32 +1,21 @@
-import React from "react";
-import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Features from "./sections/Features";
+import Benefits from "./sections/Benefits";
+import Testimonials from "./sections/Testimonials";
 
 function App() {
   return (
-    <div className="app">
-      <section className="hero">
-        <div className="hero-content">
-          <h1>
-            Smart Project Management <br /> with AI Power
-          </h1>
-          <p>
-            Manage projects, assign tasks, track progress, and boost productivity
-            with AI-driven insights — all in one place.
-          </p>
-
-          <div className="hero-buttons">
-            <button className="btn primary">Get Started</button>
-            <button className="btn secondary">Learn More</button>
-          </div>
-        </div>
-
-        <div className="hero-image">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/906/906334.png"
-            alt="project management"
-          />
-        </div>
-      </section>
+    <div className="min-h-screen bg-slate-900 overflow-x-hidden">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Features />
+        <Benefits />
+        <Testimonials />
+      </main>
     </div>
   );
 }
